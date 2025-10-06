@@ -8,7 +8,7 @@ export default function ContactHero() {
               Contact Us
             </h1>
             <p className="lead mb-4">
-              Ready to transform your technology infrastructure? Let's discuss your project needs and explore 
+              Ready to transform your technology infrastructure? Let&apos;s discuss your project needs and explore 
               how EYN Solutions can help your organization achieve its technology goals.
             </p>
             <p className="lead mb-5">

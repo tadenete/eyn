@@ -9,7 +9,7 @@ function ContactUs() {
           <div className="col-lg-8 text-center mb-5">
             <h2 className="display-5 fw-bold eyn-primary mb-4">Get In Touch</h2>
             <p className="lead text-muted">
-              Ready to transform your technology infrastructure? Let's discuss your project needs.
+              Ready to transform your technology infrastructure? Let&apos;s discuss your project needs.
             </p>
           </div>
         </div>

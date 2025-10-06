@@ -21,7 +21,7 @@ export default function ContactInfo() {
                   </div>
                 </div>
                 <h5 className="eyn-primary mb-3">Email Us</h5>
-                <p className="text-muted mb-3">Send us a message and we'll get back to you within 24 hours</p>
+                <p className="text-muted mb-3">Send us a message and we&apos;ll get back to you within 24 hours</p>
                 <a href="mailto:info@eynsolutions.com" className="btn btn-outline-primary">
                   info@eynsolutions.com
                 </a>

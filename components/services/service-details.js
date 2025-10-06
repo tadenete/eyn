@@ -9,7 +9,7 @@ export default function ServiceDetails(props) {
           <div className="col-lg-8 text-center mb-5">
             <h2 className="display-5 fw-bold eyn-primary mb-4">Service Offerings</h2> 
             <p className="lead text-muted">
-              Explore our comprehensive range of technology services designed to meet your organization's unique needs
+              Explore our comprehensive range of technology services designed to meet your organization&apos;s unique needs
             </p>
           </div>
         </div>

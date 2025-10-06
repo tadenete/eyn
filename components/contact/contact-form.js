@@ -120,7 +120,7 @@ function ContactForm() {
             <i className="fas fa-envelope eyn-primary" style={{fontSize: '1.5rem'}}></i>
           </div>
           <h3 className="mb-2 eyn-primary">Send us a Message</h3>
-          <p className="text-muted">We'll get back to you within 24 hours</p>
+          <p className="text-muted">We&apos;ll get back to you within 24 hours</p>
         </div>
         
         <form onSubmit={sendMessageHandler} className="needs-validation" noValidate>
