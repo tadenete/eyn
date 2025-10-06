@@ -1,0 +1,25 @@
+{
+  "name": "eyn",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "gray-matter": "^4.0.3",
+    "next": "^15.5.4",
+    "nodemailer": "^7.0.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-google-recaptcha": "^3.1.0",
+    "sharp": "^0.34.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^15.5.4"
+  }
+}
