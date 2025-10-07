@@ -1,6 +1,6 @@
 ---
 title: 'Software Development & System Integration'
-image: 'software-development.png'
+image: 'software-development.svg'
 excerpt: 'Custom software solutions, application development, and system integration services to improve operational efficiency and streamline business processes.'
 ---
 

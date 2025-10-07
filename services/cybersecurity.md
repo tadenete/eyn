@@ -1,6 +1,6 @@
 ---
 title: 'Cybersecurity Services'
-image: 'cybersecurity.png'
+image: 'cybersecurity.svg'
 excerpt: 'Comprehensive cybersecurity services including risk assessment, network security, compliance support, and vulnerability management to protect your organization.'
 ---
 
@@ -22,3 +22,5 @@ EYN Solutions provides comprehensive cybersecurity services to help organization
 
 **Industries Served:**
 Government agencies requiring FISMA compliance, healthcare organizations with HIPAA requirements, financial institutions with PCI-DSS compliance needs, and commercial enterprises seeking comprehensive security solutions.
+
+

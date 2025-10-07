@@ -1,0 +1,61 @@
+<svg width="200" height="150" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="dataGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.6" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="200" height="150" fill="url(#bgGradient)" rx="12"/>
+  
+  <!-- Database server -->
+  <g transform="translate(100, 75)">
+    <!-- Server rack -->
+    <rect x="-25" y="-30" width="50" height="60" fill="url(#dataGradient)" opacity="0.8" rx="3"/>
+    
+    <!-- Server slots -->
+    <rect x="-20" y="-25" width="40" height="8" fill="url(#bgGradient)" opacity="0.3" rx="1"/>
+    <rect x="-20" y="-15" width="40" height="8" fill="url(#bgGradient)" opacity="0.3" rx="1"/>
+    <rect x="-20" y="-5" width="40" height="8" fill="url(#bgGradient)" opacity="0.3" rx="1"/>
+    <rect x="-20" y="5" width="40" height="8" fill="url(#bgGradient)" opacity="0.3" rx="1"/>
+    <rect x="-20" y="15" width="40" height="8" fill="url(#bgGradient)" opacity="0.3" rx="1"/>
+    
+    <!-- Status lights -->
+    <circle cx="-15" cy="-20" r="2" fill="#00ff00" opacity="0.8"/>
+    <circle cx="-5" cy="-10" r="2" fill="#ffff00" opacity="0.8"/>
+    <circle cx="5" cy="0" r="2" fill="#00ff00" opacity="0.8"/>
+    <circle cx="15" cy="10" r="2" fill="#00ff00" opacity="0.8"/>
+  </g>
+  
+  <!-- Data flow arrows -->
+  <g fill="url(#dataGradient)" opacity="0.6">
+    <!-- Incoming data -->
+    <path d="M30 50 L50 50 L45 45 M50 50 L45 55" stroke="url(#dataGradient)" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <text x="15" y="55" font-family="Arial" font-size="10" fill="url(#dataGradient)">IN</text>
+    
+    <!-- Outgoing data -->
+    <path d="M150 50 L170 50 L165 45 M170 50 L165 55" stroke="url(#dataGradient)" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <text x="175" y="55" font-family="Arial" font-size="10" fill="url(#dataGradient)">OUT</text>
+  </g>
+  
+  <!-- Data charts/graphs -->
+  <g transform="translate(20, 100)">
+    <!-- Bar chart -->
+    <rect x="0" y="0" width="4" height="15" fill="url(#dataGradient)" opacity="0.7"/>
+    <rect x="6" y="5" width="4" height="10" fill="url(#dataGradient)" opacity="0.7"/>
+    <rect x="12" y="2" width="4" height="13" fill="url(#dataGradient)" opacity="0.7"/>
+    <rect x="18" y="8" width="4" height="7" fill="url(#dataGradient)" opacity="0.7"/>
+  </g>
+  
+  <!-- Cloud storage -->
+  <g transform="translate(140, 100)">
+    <path d="M20 15 Q15 10 10 15 Q5 20 10 25 L30 25 Q35 20 30 15 Q25 10 20 15 Z" 
+          fill="url(#dataGradient)" opacity="0.5"/>
+    <text x="12" y="22" font-family="Arial" font-size="8" fill="url(#bgGradient)">CLOUD</text>
+  </g>
+</svg>

@@ -1,6 +1,6 @@
 ---
 title: 'Data Management & Processing'
-image: 'data-management.png'
+image: 'data-management.svg'
 excerpt: 'Comprehensive data services including data entry, processing, secure storage, and governance strategies to optimize your data operations.'
 ---
 
@@ -27,3 +27,5 @@ EYN Solutions specializes in comprehensive data management and processing servic
 
 **Industries Served:**
 Government agencies, healthcare organizations, financial institutions, and commercial enterprises requiring robust data management and processing capabilities.
+
+

@@ -1,6 +1,6 @@
 ---
 title: 'Cloud Solutions & Migration'
-image: 'system-integration.png'
+image: 'system-integration.svg'
 excerpt: 'Cloud computing services including migration, deployment, and optimization to help organizations leverage cloud technologies for improved efficiency and scalability.'
 ---
 

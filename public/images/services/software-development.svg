@@ -1,0 +1,53 @@
+<svg width="200" height="150" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="codeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.6" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="200" height="150" fill="url(#bgGradient)" rx="12"/>
+  
+  <!-- Code brackets -->
+  <g fill="url(#codeGradient)" font-family="monospace" font-size="16" font-weight="bold">
+    <!-- Left bracket -->
+    <text x="25" y="60">&lt;</text>
+    <text x="35" y="80">/</text>
+    <text x="25" y="100">&gt;</text>
+    
+    <!-- Code lines -->
+    <text x="50" y="50">app</text>
+    <text x="50" y="70">.create()</text>
+    <text x="50" y="90">.build()</text>
+    <text x="50" y="110">.deploy()</text>
+    
+    <!-- Right bracket -->
+    <text x="145" y="60">&lt;</text>
+    <text x="155" y="80">/</text>
+    <text x="145" y="100">&gt;</text>
+  </g>
+  
+  <!-- Laptop icon -->
+  <g transform="translate(70, 20)">
+    <rect x="0" y="10" width="60" height="35" fill="none" stroke="url(#codeGradient)" stroke-width="2" rx="3"/>
+    <rect x="15" y="15" width="30" height="25" fill="url(#codeGradient)" opacity="0.3"/>
+    <rect x="25" y="45" width="10" height="3" fill="url(#codeGradient)" opacity="0.6"/>
+  </g>
+  
+  <!-- Mobile device -->
+  <g transform="translate(140, 25)">
+    <rect x="0" y="0" width="20" height="35" fill="none" stroke="url(#codeGradient)" stroke-width="1.5" rx="3"/>
+    <rect x="3" y="5" width="14" height="20" fill="url(#codeGradient)" opacity="0.3"/>
+  </g>
+  
+  <!-- Cloud icon -->
+  <g transform="translate(10, 105)">
+    <path d="M15 20 Q10 15 5 20 Q0 25 5 30 L25 30 Q30 25 25 20 Q20 15 15 20 Z" 
+          fill="url(#codeGradient)" opacity="0.4"/>
+  </g>
+</svg>

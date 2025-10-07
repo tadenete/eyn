@@ -1,6 +1,6 @@
 ---
 title: 'IT Consulting & Support Services'
-image: 'technology-consulting.png'
+image: 'technology-consulting.svg'
 excerpt: 'Comprehensive IT consulting services including technology strategy, digital transformation, and ongoing IT support to optimize your technology infrastructure.'
 ---
 
