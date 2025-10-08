@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function WhyChooseUs() {
   return (
-    <section className="section-spacing">
+    <section className="section-spacing section-with-pattern">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-8 text-center mb-5">

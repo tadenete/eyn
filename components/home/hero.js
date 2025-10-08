@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="section-spacing text-center eyn-bg-light">
-      <div className="container">
+    <section className="section-spacing text-center hero-background">
+      <div className="container hero-content">
         <div className="row justify-content-center">
           <div className="col-lg-10 col-xl-8">
             <h1 className="display-4 fw-bold eyn-primary mb-4">

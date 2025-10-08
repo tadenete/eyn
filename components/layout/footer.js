@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function Footer() {
   return (
-    <footer className="footer py-4 eyn-bg-light border-top">
+    <footer className="footer py-4 footer-with-pattern border-top">
       <div className="container">
         <div className="row">
           <div className="col-md-6">
