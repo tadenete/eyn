@@ -5,9 +5,9 @@ This document describes the background images used on each page of the EYN Solut
 ## Hero Section Background Images
 
 ### 1. **Home Page** (`/`)
-- **Image URL**: `https://images.unsplash.com/photo-1522071820081-009f0129c71c`
-- **Description**: Team of professionals collaborating around a laptop in a modern office setting
-- **Theme**: Teamwork, collaboration, IT professionals working together
+- **Image URL**: `/images/site/campaign-creators-gMsnXqILjp4-unsplash.JPG`
+- **Description**: Professional team in conference room with laptops and presentation screen
+- **Theme**: Teamwork, collaboration, IT professionals working together, business meeting
 - **Location in code**: `styles/globals.css` - `.hero-background`
 
 ### 2. **About Page** (`/about`)
