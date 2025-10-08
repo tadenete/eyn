@@ -1,11 +1,11 @@
 export default function ContactInfo() {
   return (
-    <section className="dc-location-background">
-      <div className="container dc-location-content">
+    <section className="section-spacing">
+      <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-8 text-center mb-5">
-            <h2 className="display-5 fw-bold mb-4">Get In Touch</h2>
-            <p className="lead">
+            <h2 className="display-5 fw-bold eyn-primary mb-4">Get In Touch</h2>
+            <p className="lead text-muted">
               Reach out to us through any of the following channels
             </p>
           </div>
@@ -13,7 +13,7 @@ export default function ContactInfo() {
         
         <div className="row g-4">
           <div className="col-lg-6 col-md-6">
-            <div className="card h-100 border-0 shadow-lg text-center bg-white bg-opacity-95">
+            <div className="card h-100 border-0 shadow-sm text-center">
               <div className="card-body p-4">
                 <div className="mb-3">
                   <div className="rounded-circle bg-primary bg-opacity-10 d-inline-flex align-items-center justify-content-center" style={{width: '70px', height: '70px'}}>
@@ -30,7 +30,7 @@ export default function ContactInfo() {
           </div>
           
           <div className="col-lg-6 col-md-6">
-            <div className="card h-100 border-0 shadow-lg text-center bg-white bg-opacity-95">
+            <div className="card h-100 border-0 shadow-sm text-center">
               <div className="card-body p-4">
                 <div className="mb-3">
                   <div className="rounded-circle bg-primary bg-opacity-10 d-inline-flex align-items-center justify-content-center" style={{width: '70px', height: '70px'}}>

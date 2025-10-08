@@ -23,10 +23,10 @@ This document describes the background images used on each page of the EYN Solut
 - **Location in code**: `styles/globals.css` - `.services-hero-background`
 
 ### 4. **Contact Page** (`/contact`)
-- **Image URL**: `https://images.unsplash.com/photo-1555992457-f824f970c891`
-- **Description**: Washington DC Capitol Building and surrounding area
+- **Image URL**: `https://images.unsplash.com/photo-1617581629397-a72507c3de9e`
+- **Description**: Washington DC Monument and Capitol Building
 - **Theme**: Washington DC location, government sector, federal services, local presence
-- **Location in code**: `styles/globals.css` - `.contact-hero-background`
+- **Location in code**: `styles/globals.css` - `.contact-hero-background` and `.dc-location-background`
 
 ## Technical Implementation
 
