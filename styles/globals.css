@@ -380,6 +380,97 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* Mobile Background Image Optimizations */
+@media (max-width: 768px) {
+  /* Hero Background Mobile Optimizations */
+  .hero-background,
+  .about-hero-background,
+  .services-hero-background,
+  .contact-hero-background {
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    min-height: 60vh;
+    /* Optimize for mobile performance */
+    will-change: transform;
+    transform: translateZ(0);
+  }
+  
+  /* Reduce padding on mobile for better space utilization */
+  .hero-background .section-spacing,
+  .about-hero-background .section-spacing,
+  .services-hero-background .section-spacing,
+  .contact-hero-background .section-spacing {
+    padding: 3rem 0;
+  }
+  
+  /* Optimize text shadows for mobile readability */
+  .hero-background h1,
+  .hero-background .lead,
+  .hero-background p,
+  .about-hero-background h1,
+  .about-hero-background .lead,
+  .about-hero-background p,
+  .services-hero-background h1,
+  .services-hero-background .lead,
+  .services-hero-background p,
+  .contact-hero-background h1,
+  .contact-hero-background .lead,
+  .contact-hero-background p {
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8), 0 4px 12px rgba(0, 0, 0, 0.6);
+  }
+}
+
+@media (max-width: 576px) {
+  /* Further mobile optimizations for small screens */
+  .hero-background,
+  .about-hero-background,
+  .services-hero-background,
+  .contact-hero-background {
+    min-height: 50vh;
+    background-position: center top;
+  }
+  
+  /* Reduce padding even more on small screens */
+  .hero-background .section-spacing,
+  .about-hero-background .section-spacing,
+  .services-hero-background .section-spacing,
+  .contact-hero-background .section-spacing {
+    padding: 2rem 0;
+  }
+  
+  /* Optimize overlay opacity for better mobile readability */
+  .hero-background::before,
+  .about-hero-background::before,
+  .services-hero-background::before,
+  .contact-hero-background::before {
+    background: rgba(30, 58, 138, 0.7);
+  }
+}
+
+/* High-DPI Display Optimizations */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hero-background {
+    background-image: linear-gradient(135deg, rgba(30, 58, 138, 0.5) 0%, rgba(37, 99, 235, 0.4) 50%, rgba(6, 182, 212, 0.5) 100%),
+      url('/images/site/campaign-creators-gMsnXqILjp4-unsplash.JPG');
+  }
+  
+  .about-hero-background {
+    background-image: linear-gradient(135deg, rgba(55, 65, 81, 0.5) 0%, rgba(30, 58, 138, 0.4) 50%, rgba(6, 182, 212, 0.5) 100%),
+      url('https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=2000&auto=format&fit=crop');
+  }
+  
+  .services-hero-background {
+    background-image: linear-gradient(135deg, rgba(6, 182, 212, 0.5) 0%, rgba(37, 99, 235, 0.4) 50%, rgba(30, 58, 138, 0.5) 100%),
+      url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2000&auto=format&fit=crop');
+  }
+  
+  .contact-hero-background {
+    background-image: linear-gradient(135deg, rgba(30, 58, 138, 0.5) 0%, rgba(55, 65, 81, 0.4) 50%, rgba(6, 182, 212, 0.5) 100%),
+      url('https://images.unsplash.com/photo-1617581629397-a72507c3de9e?q=80&w=2000&auto=format&fit=crop');
+  }
+}
+
 /* Hero Background Styles */
 .hero-background {
   position: relative;
@@ -598,6 +689,15 @@ h1, h2, h3, h4, h5, h6 {
   .dc-location-background {
     padding: 4rem 0;
     background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 576px) {
+  .dc-location-background {
+    padding: 3rem 0;
+    background-position: center top;
   }
 }
 

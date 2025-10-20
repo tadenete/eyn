@@ -79,9 +79,24 @@ For a stronger Washington DC theme, consider using images featuring:
 - **Subject**: Professional, business-focused, with people in action
 - **Color tone**: Cool tones (blues, grays) work best with the brand gradient
 
+## Mobile Optimizations
+
+The background images are optimized for mobile devices with the following features:
+
+- **Background Attachment**: Set to `scroll` on mobile devices for better performance
+- **Background Position**: Optimized positioning (`center center` on tablets, `center top` on phones)
+- **Background Size**: Maintains `cover` for proper scaling across all devices
+- **Minimum Height**: Responsive heights (60vh on tablets, 50vh on phones)
+- **Padding Adjustments**: Reduced padding on mobile for better space utilization
+- **Overlay Opacity**: Enhanced overlay opacity on small screens for better text readability
+- **Performance**: Hardware acceleration enabled with `will-change` and `transform: translateZ(0)`
+- **High-DPI Support**: Optimized for Retina and high-resolution displays
+
 ## Notes
 
 - Images are loaded from Unsplash CDN with automatic optimization (`?q=80&w=2000&auto=format&fit=crop`)
 - All text remains fully readable with the overlay system
 - Backgrounds are fully responsive and work on all device sizes
 - Images maintain accessibility with proper contrast ratios
+- Mobile performance is optimized with scroll-based background attachment
+- Text shadows are optimized for mobile readability
