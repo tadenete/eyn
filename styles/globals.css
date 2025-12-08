@@ -440,33 +440,35 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   /* Optimize overlay opacity for better mobile readability */
-  .hero-background::before,
+  .hero-background::before {
+    background: rgba(30, 58, 138, 0.4);
+  }
   .about-hero-background::before,
   .services-hero-background::before,
   .contact-hero-background::before {
-    background: rgba(30, 58, 138, 0.7);
+    background: rgba(30, 58, 138, 0.5);
   }
 }
 
 /* High-DPI Display Optimizations */
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .hero-background {
-    background-image: linear-gradient(135deg, rgba(30, 58, 138, 0.5) 0%, rgba(37, 99, 235, 0.4) 50%, rgba(6, 182, 212, 0.5) 100%),
-      url('/images/site/campaign-creators-gMsnXqILjp4-unsplash.JPG');
+    background-image: linear-gradient(135deg, rgba(30, 58, 138, 0.2) 0%, rgba(37, 99, 235, 0.15) 50%, rgba(6, 182, 212, 0.2) 100%),
+      url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2000&auto=format&fit=crop');
   }
   
   .about-hero-background {
-    background-image: linear-gradient(135deg, rgba(55, 65, 81, 0.5) 0%, rgba(30, 58, 138, 0.4) 50%, rgba(6, 182, 212, 0.5) 100%),
+    background-image: linear-gradient(135deg, rgba(55, 65, 81, 0.3) 0%, rgba(30, 58, 138, 0.25) 50%, rgba(6, 182, 212, 0.3) 100%),
       url('https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=2000&auto=format&fit=crop');
   }
   
   .services-hero-background {
-    background-image: linear-gradient(135deg, rgba(6, 182, 212, 0.5) 0%, rgba(37, 99, 235, 0.4) 50%, rgba(30, 58, 138, 0.5) 100%),
+    background-image: linear-gradient(135deg, rgba(6, 182, 212, 0.3) 0%, rgba(37, 99, 235, 0.25) 50%, rgba(30, 58, 138, 0.3) 100%),
       url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2000&auto=format&fit=crop');
   }
   
   .contact-hero-background {
-    background-image: linear-gradient(135deg, rgba(30, 58, 138, 0.5) 0%, rgba(55, 65, 81, 0.4) 50%, rgba(6, 182, 212, 0.5) 100%),
+    background-image: linear-gradient(135deg, rgba(30, 58, 138, 0.3) 0%, rgba(55, 65, 81, 0.25) 50%, rgba(6, 182, 212, 0.3) 100%),
       url('https://images.unsplash.com/photo-1617581629397-a72507c3de9e?q=80&w=2000&auto=format&fit=crop');
   }
 }
@@ -474,8 +476,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Hero Background Styles */
 .hero-background {
   position: relative;
-  background: linear-gradient(135deg, rgba(30, 58, 138, 0.5) 0%, rgba(37, 99, 235, 0.4) 50%, rgba(6, 182, 212, 0.5) 100%),
-    url('/images/site/campaign-creators-gMsnXqILjp4-unsplash.JPG') center/cover no-repeat;
+  background: linear-gradient(135deg, rgba(30, 58, 138, 0.2) 0%, rgba(37, 99, 235, 0.15) 50%, rgba(6, 182, 212, 0.2) 100%),
+    url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2000&auto=format&fit=crop') center/cover no-repeat;
   background-blend-mode: overlay;
   overflow: hidden;
 }
@@ -487,7 +489,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(30, 58, 138, 0.6);
+  background: rgba(30, 58, 138, 0.3);
   pointer-events: none;
 }
 
@@ -512,7 +514,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero-background .lead,
 .hero-background p {
   color: white !important;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.8), 0 4px 16px rgba(0, 0, 0, 0.6), 0 6px 20px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.9), 0 4px 20px rgba(0, 0, 0, 0.8), 0 6px 24px rgba(0, 0, 0, 0.6);
 }
 
 .hero-background .eyn-primary {
@@ -522,7 +524,7 @@ h1, h2, h3, h4, h5, h6 {
 /* About Page Hero Background */
 .about-hero-background {
   position: relative;
-  background: linear-gradient(135deg, rgba(55, 65, 81, 0.5) 0%, rgba(30, 58, 138, 0.4) 50%, rgba(6, 182, 212, 0.5) 100%),
+  background: linear-gradient(135deg, rgba(55, 65, 81, 0.3) 0%, rgba(30, 58, 138, 0.25) 50%, rgba(6, 182, 212, 0.3) 100%),
     url('https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=2000&auto=format&fit=crop') center/cover no-repeat;
   background-blend-mode: overlay;
   overflow: hidden;
@@ -535,7 +537,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(30, 58, 138, 0.3);
+  background: rgba(30, 58, 138, 0.2);
   pointer-events: none;
 }
 
@@ -565,7 +567,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Services Page Hero Background */
 .services-hero-background {
   position: relative;
-  background: linear-gradient(135deg, rgba(6, 182, 212, 0.5) 0%, rgba(37, 99, 235, 0.4) 50%, rgba(30, 58, 138, 0.5) 100%),
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.3) 0%, rgba(37, 99, 235, 0.25) 50%, rgba(30, 58, 138, 0.3) 100%),
     url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2000&auto=format&fit=crop') center/cover no-repeat;
   background-blend-mode: overlay;
   overflow: hidden;
@@ -578,7 +580,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(30, 58, 138, 0.6);
+  background: rgba(30, 58, 138, 0.4);
   pointer-events: none;
 }
 
@@ -608,7 +610,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Contact Page Hero Background */
 .contact-hero-background {
   position: relative;
-  background: linear-gradient(135deg, rgba(30, 58, 138, 0.5) 0%, rgba(55, 65, 81, 0.4) 50%, rgba(6, 182, 212, 0.5) 100%),
+  background: linear-gradient(135deg, rgba(30, 58, 138, 0.3) 0%, rgba(55, 65, 81, 0.25) 50%, rgba(6, 182, 212, 0.3) 100%),
     url('https://images.unsplash.com/photo-1617581629397-a72507c3de9e?q=80&w=2000&auto=format&fit=crop') center/cover no-repeat;
   background-blend-mode: overlay;
   overflow: hidden;
@@ -621,7 +623,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(30, 58, 138, 0.6);
+  background: rgba(30, 58, 138, 0.4);
   pointer-events: none;
 }
 
@@ -651,7 +653,7 @@ h1, h2, h3, h4, h5, h6 {
 /* DC Location Background Section */
 .dc-location-background {
   position: relative;
-  background: linear-gradient(135deg, rgba(30, 58, 138, 0.5) 0%, rgba(55, 65, 81, 0.4) 50%, rgba(6, 182, 212, 0.5) 100%),
+  background: linear-gradient(135deg, rgba(30, 58, 138, 0.3) 0%, rgba(55, 65, 81, 0.25) 50%, rgba(6, 182, 212, 0.3) 100%),
     url('https://images.unsplash.com/photo-1617581629397-a72507c3de9e?q=80&w=2000&auto=format&fit=crop') center/cover no-repeat;
   background-blend-mode: overlay;
   background-attachment: fixed;
@@ -666,7 +668,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(30, 58, 138, 0.3);
+  background: rgba(30, 58, 138, 0.2);
   pointer-events: none;
 }
 

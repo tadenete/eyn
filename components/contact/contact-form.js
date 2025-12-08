@@ -5,10 +5,21 @@ function ContactForm() {
   const [enteredEmail, setEnteredEmail] = useState("");
   const [enteredName, setEnteredName] = useState("");
   const [enteredMessage, setEnteredMessage] = useState("");
+  const [enteredTopic, setEnteredTopic] = useState("");
   const [requestStatus, setRequestStatus] = useState(); // 'pending', 'success', 'error'
   const [requestError, setRequestError] = useState();
   const [formErrors, setFormErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const serviceTypes = [
+    { value: "", label: "Select a topic..." },
+    { value: "Software Development & System Integration", label: "Software Development & System Integration" },
+    { value: "Data Management & Processing", label: "Data Management & Processing" },
+    { value: "Cybersecurity Services", label: "Cybersecurity Services" },
+    { value: "Cloud Solutions & Migration", label: "Cloud Solutions & Migration" },
+    { value: "IT Consulting & Support Services", label: "IT Consulting & Support Services" },
+    { value: "General Inquiry", label: "General Inquiry" },
+  ];
 
   const validateForm = () => {
     const errors = {};
@@ -23,6 +34,10 @@ function ContactForm() {
       errors.email = "Email is required";
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(enteredEmail)) {
       errors.email = "Please enter a valid email address";
+    }
+    
+    if (!enteredTopic.trim()) {
+      errors.topic = "Please select a topic";
     }
     
     if (!enteredMessage.trim()) {
@@ -50,6 +65,7 @@ function ContactForm() {
         body: JSON.stringify({
           email: enteredEmail,
           name: enteredName,
+          topic: enteredTopic,
           message: enteredMessage,
         }),
         headers: {
@@ -65,6 +81,7 @@ function ContactForm() {
       setEnteredMessage("");
       setEnteredEmail("");
       setEnteredName("");
+      setEnteredTopic("");
     } catch (error) {
       setRequestError(error.message);
       setRequestStatus("error");
@@ -162,6 +179,31 @@ function ContactForm() {
               <div className="invalid-feedback d-block">
                 <i className="fas fa-exclamation-circle me-1"></i>
                 {formErrors.email}
+              </div>
+            )}
+          </div>
+
+          <div className="mb-4">
+            <label htmlFor="topic" className="form-label fw-semibold">
+              <i className="fas fa-tag me-2 eyn-primary"></i>Topic / Service Type
+            </label>
+            <select
+              className={`form-control form-control-lg ${formErrors.topic ? 'is-invalid' : ''}`}
+              id="topic"
+              value={enteredTopic}
+              onChange={(event) => setEnteredTopic(event.target.value)}
+              disabled={isSubmitting}
+            >
+              {serviceTypes.map((service) => (
+                <option key={service.value} value={service.value}>
+                  {service.label}
+                </option>
+              ))}
+            </select>
+            {formErrors.topic && (
+              <div className="invalid-feedback d-block">
+                <i className="fas fa-exclamation-circle me-1"></i>
+                {formErrors.topic}
               </div>
             )}
           </div>

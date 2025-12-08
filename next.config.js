@@ -1,28 +1,31 @@
 const { PHASE_DEVELOPMENT_SERVER } = require("next/constants");
+
 module.exports = (phase) => {
-  if (phase === PHASE_DEVELOPMENT_SERVER) {
-    //we're in development mode.
+  const isDev = phase === PHASE_DEVELOPMENT_SERVER;
+
+  // Development configuration
+  if (isDev) {
     return {
       env: {
-        smtp_host: "smtp-relay.sendinblue.com",
-        smtp_user: "info@eynsolutions.com",
-        smtp_pass: "your-smtp-password-here",
-        support_email: "info@eynsolutions.com",
-        RECAPTCHA_SITE_KEY: 'your-recaptcha-site-key',
-        RECAPTCHA_SECRET_KEY: 'your-recaptcha-secret-key'
+        SMTP_HOST: "smtp.gmail.com",
+        SMTP_USER: "tadesse.eshetu@gmail.com",
+        SMTP_PASS: "bpzcpnlrnhvjfizl",
+        SUPPORT_EMAIL: "info@eynsolutions.com",
+        RECAPTCHA_SITE_KEY: process.env.RECAPTCHA_SITE_KEY || "your-recaptcha-site-key",
+        RECAPTCHA_SECRET_KEY: process.env.RECAPTCHA_SECRET_KEY || "your-recaptcha-secret-key",
       },
     };
   }
 
-  //we're not in development mode..
+  // Production configuration
   return {
     env: {
-      smtp_host: "smtp-relay.sendinblue.com",
-      smtp_user: "info@eynsolutions.com",
-      smtp_pass: "your-smtp-password-here",
-      support_email: "info@eynsolutions.com",
-      RECAPTCHA_SITE_KEY: 'your-recaptcha-site-key',
-      RECAPTCHA_SECRET_KEY: 'your-recaptcha-secret-key'
+      SMTP_HOST: "smtp.gmail.com",
+      SMTP_USER: "tadesse.eshetu@gmail.com",
+      SMTP_PASS: "bpzcpnlrnhvjfizl",
+      SUPPORT_EMAIL: "info@eynsolutions.com",
+      RECAPTCHA_SITE_KEY: process.env.RECAPTCHA_SITE_KEY || "your-recaptcha-site-key",
+      RECAPTCHA_SECRET_KEY: process.env.RECAPTCHA_SECRET_KEY || "your-recaptcha-secret-key",
     },
   };
 };
