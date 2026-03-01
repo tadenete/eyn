@@ -33,7 +33,7 @@ export default function Hero() {
           <div
             className="split-hero-media"
             role="img"
-            aria-label="Developers collaborating in a modern workspace"
+            aria-label="Professional meeting at EYN Solutions"
           />
         </div>
 

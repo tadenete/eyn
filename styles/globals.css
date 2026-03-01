@@ -240,22 +240,24 @@ h1, h2, h3, h4, h5, h6 {
 /* Split Hero System */
 .split-hero {
   background: linear-gradient(to bottom, #f8fafc 0%, #ffffff 100%);
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .split-hero-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
-  gap: 2rem;
+  gap: 1rem;
   align-items: stretch;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .split-hero-copy {
   background: #ffffff;
   border: 1px solid #e5e7eb;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
-  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+  padding: 1.25rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -264,10 +266,10 @@ h1, h2, h3, h4, h5, h6 {
 .split-hero-kicker {
   display: inline-flex;
   width: fit-content;
-  margin-bottom: 1rem;
-  padding: 0.4rem 0.85rem;
+  margin-bottom: 0.4rem;
+  padding: 0.25rem 0.5rem;
   border-radius: 999px;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   font-weight: 700;
@@ -275,9 +277,14 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(30, 58, 138, 0.08);
 }
 
+.split-hero-copy h1 {
+  font-size: 1.85rem;
+}
+
 .split-hero-copy .lead {
   color: #4b5563;
   max-width: 64ch;
+  font-size: 0.95rem;
 }
 
 .split-hero-actions {
@@ -288,17 +295,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .split-hero-media {
-  min-height: 420px;
-  border-radius: 16px;
+  min-height: 200px;
+  border-radius: 10px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   border: 1px solid rgba(30, 58, 138, 0.15);
-  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.14);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
 }
 
 .split-hero-home .split-hero-media {
-  background-image: url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2000&auto=format&fit=crop");
+  background-image: url("/images/hero-home.jpg");
 }
 
 .split-hero-about .split-hero-media {
@@ -329,24 +336,36 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 991px) {
   .split-hero-grid {
     grid-template-columns: 1fr;
+    /* Mobile: image on top, hero header/copy on bottom */
+    display: grid;
   }
 
   .split-hero-copy {
-    padding: 2rem;
+    padding: 1rem;
+    order: 2;
   }
 
   .split-hero-media {
-    min-height: 320px;
+    min-height: 160px;
+    order: 1;
+  }
+
+  .split-hero-copy h1 {
+    font-size: 1.6rem;
   }
 }
 
 @media (max-width: 576px) {
   .split-hero-copy {
-    padding: 1.5rem;
+    padding: 0.875rem;
   }
 
   .split-hero-copy h1 {
-    font-size: 1.9rem;
+    font-size: 1.45rem;
+  }
+
+  .split-hero-media {
+    min-height: 140px;
   }
 
   .split-hero-actions .btn {
