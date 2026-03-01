@@ -1,22 +1,31 @@
 export default function Hero() {
   return (
-    <section className="section-spacing text-center about-hero-background">
-      <div className="container hero-content">
-        <div className="row justify-content-center">
-          <div className="col-lg-10 col-xl-8">
-            <h1 className="display-4 fw-bold eyn-primary mb-4">
-              About EYN Solutions
-            </h1>
-            <p className="lead mb-4">
-              EYN Solutions LLC is a <strong>CBE-certified, Washington, D.C.-based IT solutions provider</strong> specializing in 
-              software development, data management, and cybersecurity.
+    <section className="section-spacing split-hero split-hero-about">
+      <div className="container">
+        <div className="split-hero-grid">
+          <div className="split-hero-copy">
+            <span className="split-hero-kicker">Who We Are</span>
+            <h1 className="display-4 fw-bold eyn-primary mb-4">About EYN Solutions</h1>
+            <p className="lead mb-3">
+              EYN Solutions LLC is a{" "}
+              <strong>CBE-certified, Washington, D.C.-based IT solutions provider</strong>{" "}
+              specializing in software development, data management, and cybersecurity.
             </p>
-            <p className="lead mb-5">
-              As a trusted <strong>Certified Business Enterprise (CBE)</strong>, we deliver innovative, scalable, and secure 
-              technology solutions tailored to meet the unique needs of government agencies, private enterprises, and nonprofit organizations.
+            <p className="lead mb-0">
+              As a trusted <strong>Certified Business Enterprise (CBE)</strong>, we
+              deliver innovative, scalable, and secure technology solutions tailored to
+              meet the unique needs of government agencies, private enterprises, and
+              nonprofit organizations.
             </p>
-            
-            <div className="row g-4 mt-5">
+          </div>
+          <div
+            className="split-hero-media"
+            role="img"
+            aria-label="Team discussing technology solutions"
+          />
+        </div>
+
+        <div className="row g-4 mt-2">
               <div className="col-lg-4 col-md-6">
                 <div className="card h-100 text-center border-0">
                   <div className="card-body">
@@ -87,8 +96,6 @@ export default function Hero() {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
       </div>
     </section>
   );

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { useState } from "react";
 import { useRouter } from "next/router";
 
@@ -12,8 +11,8 @@ function MainNavigation() {
   };
 
   return (
-    <div className="border-bottom" style={{background: 'linear-gradient(135deg, #1e3a8a 0%, #06b6d4 100%)'}}>
-      <nav className="container navbar navbar-expand-lg navbar-dark">
+    <div className="border-bottom main-nav-shell">
+      <nav className="container navbar navbar-expand-lg navbar-dark main-nav-container">
         <div className="navbar-brand">
           <Link href={"/"} className="text-decoration-none">
             <div className="d-flex align-items-center">
@@ -48,28 +47,28 @@ function MainNavigation() {
           <div className="navbar-nav ms-auto">
             <Link 
               href="/" 
-              className={`nav-link ${isActive('/') ? 'text-white fw-bold' : 'text-light'}`}
+              className={`nav-link nav-link-pill ${isActive('/') ? "nav-link-pill-active" : "text-light"}`}
               onClick={() => setIsMenuOpen(false)}
             >
               Home
             </Link>
             <Link 
               href="/about" 
-              className={`nav-link ${isActive('/about') ? 'text-white fw-bold' : 'text-light'}`}
+              className={`nav-link nav-link-pill ${isActive('/about') ? "nav-link-pill-active" : "text-light"}`}
               onClick={() => setIsMenuOpen(false)}
             >
               About Us
             </Link>
             <Link 
               href="/services" 
-              className={`nav-link ${isActive('/services') ? 'text-white fw-bold' : 'text-light'}`}
+              className={`nav-link nav-link-pill ${isActive('/services') ? "nav-link-pill-active" : "text-light"}`}
               onClick={() => setIsMenuOpen(false)}
             >
               Services
             </Link>
             <Link 
               href="/contact" 
-              className={`nav-link ${isActive('/contact') ? 'text-white fw-bold' : 'text-light'}`}
+              className={`nav-link nav-link-pill ${isActive('/contact') ? "nav-link-pill-active" : "text-light"}`}
               onClick={() => setIsMenuOpen(false)}
             >
               Contact
